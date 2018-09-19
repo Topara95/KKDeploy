@@ -4,8 +4,6 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
-import javax.annotation.PostConstruct;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Component;
@@ -24,7 +22,7 @@ public class TestData {
 	@Autowired
 	ImageRepository imageRepository;
 	
-	@PostConstruct
+//	@PostConstruct
 	private void init() throws IOException{
 		String slika = "https://i.imgur.com/77cOg7pm.jpg";
 		String videoLink = "https://www.youtube.com/embed/4ZKM4qok2Tg";
