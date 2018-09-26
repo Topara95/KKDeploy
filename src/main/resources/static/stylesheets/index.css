@@ -13,6 +13,9 @@
   background-position:center !important;
 }
 
+.card-img-top{
+	max-height: 40vh;
+}
 
 /*.carousel-item.active,
 .carousel-item-next,
