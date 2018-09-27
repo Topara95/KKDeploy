@@ -5,16 +5,24 @@
 
 #carouselExampleIndicators{
 	max-height : 10%;
+	background: #93a0ab;
 }
 
 .carousel-item{
-  height:50vh;
+  min-height:60vh;
+  max-height:70vh;
   background-size:cover !important;
   background-position:center !important;
 }
 
 .card-img-top{
 	max-height: 40vh;
+}
+
+#carslike{
+	width:1200px;
+  	margin:0 auto;
+  	background-image: url("../images/kklogo.jpg");
 }
 
 /*.carousel-item.active,
