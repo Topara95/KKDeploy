@@ -1,6 +1,9 @@
 package kkproject.domain;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.TimeZone;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -45,7 +48,18 @@ public class News {
 	private Date sortstamp;
 	
 	public News(){
-		this.creationDate = new Date();
+		SimpleDateFormat isoFormat = new SimpleDateFormat("EEE MMM dd HH:mm:ss zzz yyyy");
+		isoFormat.setTimeZone(TimeZone.getTimeZone("CEST"));
+		Date now = new Date();
+		try {
+			
+			Date date = isoFormat.parse(now.toString());
+			this.creationDate = date;
+		} catch (ParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
 		this.creationTime = new Date();
 		this.sortstamp = new Date();
 	}
