@@ -20,9 +20,7 @@
 }
 
 #carslike{
-	width:1200px;
   	margin:0 auto;
-  	background-image: url("../images/kklogo.jpg");
 }
 
 /*.carousel-item.active,
