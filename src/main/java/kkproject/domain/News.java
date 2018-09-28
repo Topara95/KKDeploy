@@ -26,7 +26,7 @@ public class News {
 	@Column(nullable = false, name="naslov")
 	private String title;
 	
-	@Column(nullable = false, name="sadržaj")
+	@Column(nullable = false, name="sadržaj", length = 2000)
 	private String content;
 	
 	@OneToOne
