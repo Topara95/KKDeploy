@@ -55,12 +55,13 @@ public class News {
 			
 			Date date = isoFormat.parse(now.toString());
 			this.creationDate = date;
+			this.creationTime = date;
 		} catch (ParseException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
-		this.creationTime = new Date();
+		
 		this.sortstamp = new Date();
 	}
 	
